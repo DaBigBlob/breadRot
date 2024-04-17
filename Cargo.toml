@@ -12,6 +12,7 @@ edition = "2021"
 [lib]
 name = "breadrot"
 path = "src/lib.rs"
+doc = true
 
 [[bin]]
 name = "breadrot"
