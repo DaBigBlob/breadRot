@@ -94,6 +94,7 @@ version = "0.1.0"
 dependencies = [
  "bindgen",
  "clap",
+ "easy-ext",
  "thiserror",
 ]
 
@@ -168,6 +169,12 @@ name = "colorchoice"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
+
+[[package]]
+name = "easy-ext"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "49457524c7e65648794c98283282a0b7c73b10018e7091f1cdcfff314fd7ae59"
 
 [[package]]
 name = "either"
