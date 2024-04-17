@@ -9,8 +9,6 @@ repository = "https://github.com/DaBigBlob/breadRot"
 readme = "README.md"
 edition = "2021"
 
-[workspace]
-
 [lib]
 name = "breadrot"
 path = "src/lib.rs"
