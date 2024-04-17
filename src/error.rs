@@ -5,7 +5,7 @@ use std::io;
 #[derive(Debug, thiserror::Error)]
 #[allow(dead_code)]
 pub enum Error {
-    #[error("File `{0}` could not be read because: {1}")]
+    #[error("File `{0}` could not be read: {1}")]
     FileNotReadable(String, io::Error)
 }
 
