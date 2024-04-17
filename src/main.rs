@@ -1,8 +1,5 @@
-mod error;
-mod core;
-
-use core::{Bindata, BindataTrait};
-use error::Error;
+use breadrot::{Bindata, BindataTrait};
+use breadrot::Error;
 use std::{fs, path::PathBuf};
 
 use clap::Parser;

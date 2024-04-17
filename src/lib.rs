@@ -1,3 +1,7 @@
 pub mod boards;
-pub mod error;
-pub mod core;
+
+mod error;
+mod core;
+
+pub use error::*;
+pub use core::*;
