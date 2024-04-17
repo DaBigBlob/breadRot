@@ -24,10 +24,12 @@ struct Cli {
 
 // }
 
-fn main() {
+fn main() -> Result<(), error::Error>{
     let args = Cli::parse();
-    match fs::read_to_string(&args.input) {
-        Ok(d) => println!("{}", d),
-        Err(e) => Error::FileNotReadable(args.input.display().to_string(), e).say()
-    }
+    let file_string = match fs::read_to_string(&args.input) {
+        Ok(d) => d,
+        Err(e) => return Error::FileNotReadable(args.input.display().to_string(), e).to_err()
+    };
+    println!("{}", file_string);
+    Ok(())
 }
