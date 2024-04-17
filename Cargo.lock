@@ -3,12 +3,5 @@
 version = 3
 
 [[package]]
-name = "MCS51sim"
-version = "0.1.0"
-
-[[package]]
 name = "breadrot"
 version = "0.1.0"
-dependencies = [
- "MCS51sim",
-]
