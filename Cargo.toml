@@ -1,6 +1,10 @@
-[package]
 name = "breadrot"
 version = "0.1.0"
+rust-version = "1.61"
+authors = ["Localbox Crox <hman@hman.io>"]
+license = "BSD-3-Clause"
+description = "a collection of simulators for microprocessors in rust"
+keywords = ["spotify"]
+repository = "https://github.com/DaBigBlob/breadRot"
+readme = "README.md"
 edition = "2021"
-
-[dependencies]
