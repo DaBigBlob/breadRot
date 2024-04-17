@@ -1,3 +1,1 @@
-#![crate_name = "breadrot"]
-
-
+mod boards;
