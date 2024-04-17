@@ -8,3 +8,13 @@ keywords = ["spotify"]
 repository = "https://github.com/DaBigBlob/breadRot"
 readme = "README.md"
 edition = "2021"
+
+
+[lib]
+name = "librespot"
+path = "src/lib.rs"
+
+[[bin]]
+name = "librespot"
+path = "src/main.rs"
+doc = false
