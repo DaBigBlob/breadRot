@@ -20,7 +20,7 @@ struct Cli {
     simulate_only: bool
 }
 
-// fn select_assembler -> Option<i32> {
+// fn assemble_for(board: String) -> Option<i32> {
 
 // }
 
