@@ -11,13 +11,7 @@ struct Cli {
     input: PathBuf,
 
     #[arg(short = 'b', long = "board")]
-    board: String,
-
-    #[arg(short = 'c', long = "compile-to-file")]
-    compile_to_file: Option<PathBuf>,
-
-    #[arg(short = 'a', long = "assemble-only")]
-    assemble_to_file: Option<PathBuf>
+    board: String
 }
 
 // fn assemble_for(board: String) -> Option<i32> {
