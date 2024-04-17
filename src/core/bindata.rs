@@ -15,7 +15,7 @@ impl Bindata {
             Err(e) => Err(e)
         }
     }
-    pub fn to_file(self, path: PathBuf) -> io::Result<()> {
+    pub fn to_file(self, path: &PathBuf) -> io::Result<()> {
         match File::create(path) {
             Ok(mut f) => f.write_all(&self),
             Err(e) => Err(e)
