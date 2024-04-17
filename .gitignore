@@ -7,4 +7,4 @@ spotify_appkey.key
 *.save
 
 
-samples/
+samples/*.bin
