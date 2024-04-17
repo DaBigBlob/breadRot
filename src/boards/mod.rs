@@ -1,1 +1,1 @@
-mod mcs51;
+pub mod mcs51;

@@ -1,6 +1,7 @@
 mod error;
+mod core;
 
-use breadrot::{Bindata, BindataTrait};
+use core::{Bindata, BindataTrait};
 use error::Error;
 use std::{fs, path::PathBuf};
 

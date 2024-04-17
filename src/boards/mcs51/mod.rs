@@ -1,3 +1,3 @@
-mod simulator;
-mod assembler;
-mod ccompiler;
+pub mod simulator;
+pub mod assembler;
+pub mod ccompiler;
