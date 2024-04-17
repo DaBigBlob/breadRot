@@ -11,8 +11,18 @@ struct Cli {
     input: PathBuf,
 
     #[arg(short = 'b', long = "board")]
-    board: String
+    board: String,
+
+    #[arg(short = 'a', long = "assemble-only")]
+    assemble_only: bool,
+
+    #[arg(short = 's', long = "simulate-only")]
+    simulate_only: bool
 }
+
+// fn select_assembler -> Option<i32> {
+
+// }
 
 fn main() {
     let args = Cli::parse();
