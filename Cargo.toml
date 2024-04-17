@@ -20,6 +20,7 @@ doc = false
 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
+thiserror = "1.0.58"
 
 
 [features]
