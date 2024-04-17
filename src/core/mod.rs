@@ -1,3 +1,3 @@
-pub mod bindata;
+mod bindata;
 
 pub use bindata::*;

@@ -1,9 +1,8 @@
 mod error;
-mod core;
 
-use core::bindata::{Bindata, BindataTrait};
+use breadrot::{Bindata, BindataTrait};
 use error::Error;
-use std::path::PathBuf;
+use std::{fs, path::PathBuf};
 
 use clap::Parser;
 #[derive(Parser)]
@@ -28,6 +27,12 @@ struct Cli {
 
 fn main() {
     let args = Cli::parse();
+    let input = match fs::read_to_string(&args.input) {
+        Ok(d) => d,
+        Err(e) => return Error::FileNotReadable(args.input.display().to_string(), e).to_stderr()
+    };
+    println!("{}", input);
+
     let input = match Bindata::from_file(&args.input) {
         Ok(d) => d,
         Err(e) => return Error::FileNotReadable(args.input.display().to_string(), e).to_stderr()
