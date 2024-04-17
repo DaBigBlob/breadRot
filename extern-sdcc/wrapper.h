@@ -1,7 +1,3 @@
-
-
-#include <stdint.h>
-
-uint8_t testt(uint8_t a, uint8_t b) {
+int testt(int a, int b) {
     return a ^ b;
 }

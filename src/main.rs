@@ -36,6 +36,7 @@ fn main() {
         Err(e) => return Error::FileAccessError(args.input.display().to_string(), e).to_stderr()
     };
     input.iter().for_each(|i|{println!("{:?}", i)});
+    
 
     match args.assemble_to_file {
         Some(p) => match input.to_file(&p) {
