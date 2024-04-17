@@ -1,2 +1,4 @@
 # breadRot
-a collection of simulators for microprocessors in rust
+a collection of compilers, assemblers and simulators for many microprocessors
+
+> heavy WIP
