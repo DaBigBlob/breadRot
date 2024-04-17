@@ -13,4 +13,7 @@ impl Error {
     pub fn say(self) {
         eprintln!("{}", self)
     }
+    // pub fn to_string(self) -> String {
+    //     format!("{}", self)
+    // }
 }
