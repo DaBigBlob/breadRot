@@ -13,11 +13,11 @@ struct Cli {
     #[arg(short = 'b', long = "board")]
     board: String,
 
-    #[arg(short = 'a', long = "assemble-only")]
-    assemble_only: bool,
+    #[arg(short = 'c', long = "compile-to-file")]
+    compile_to_file: Option<PathBuf>,
 
-    #[arg(short = 's', long = "simulate-only")]
-    simulate_only: bool
+    #[arg(short = 'a', long = "assemble-only")]
+    assemble_to_file: Option<PathBuf>
 }
 
 // fn assemble_for(board: String) -> Option<i32> {
