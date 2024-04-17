@@ -1,7 +1,7 @@
 pub mod boards;
 pub mod error;
-pub mod bindata;
+pub mod core;
 
 pub use boards::*;
 pub use error::*;
-pub use bindata::*;
+pub use core::*;

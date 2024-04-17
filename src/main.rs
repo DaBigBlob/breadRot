@@ -1,7 +1,7 @@
 mod error;
-mod bindata;
+mod core;
 
-use bindata::{Bindata, BindataTrait};
+use core::bindata::{Bindata, BindataTrait};
 use error::Error;
 use std::path::PathBuf;
 
