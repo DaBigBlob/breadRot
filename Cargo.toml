@@ -1,6 +1,6 @@
+[package]
 name = "breadrot"
 version = "0.1.0"
-rust-version = "1.61"
 authors = ["Localbox Crox <hman@hman.io>"]
 license = "BSD-3-Clause"
 description = "a collection of simulators for microprocessors in rust"
@@ -8,6 +8,8 @@ keywords = ["simulator", "assembler"]
 repository = "https://github.com/DaBigBlob/breadRot"
 readme = "README.md"
 edition = "2021"
+
+[workspace]
 
 [lib]
 name = "breadrot"
@@ -17,3 +19,9 @@ path = "src/lib.rs"
 name = "breadrot"
 path = "src/main.rs"
 doc = false
+
+[dependencies]
+clap = "4.5.4"
+
+
+[features]
