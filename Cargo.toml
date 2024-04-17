@@ -11,10 +11,10 @@ edition = "2021"
 
 
 [lib]
-name = "librespot"
+name = "breadrot"
 path = "src/lib.rs"
 
 [[bin]]
-name = "librespot"
+name = "breadrot"
 path = "src/main.rs"
 doc = false
