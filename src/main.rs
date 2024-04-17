@@ -16,7 +16,7 @@ struct Cli {
     #[arg(short = 'c', long = "compile-to-file")]
     compile_to_file: Option<PathBuf>,
 
-    #[arg(short = 'a', long = "assemble-only")]
+    #[arg(short = 'a', long = "assemble-to-file")]
     assemble_to_file: Option<PathBuf>
 }
 
