@@ -1,5 +1,5 @@
-mod boards;
+mod simulators;
 mod error;
 
-pub use boards::*;
+pub use simulators::*;
 pub use error::*;
